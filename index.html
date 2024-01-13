@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
  <head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Chris Dimapasok</title>
    <style>
     body {
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      background-image: url('Data_Science.PNG'); 
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: #ffffff; 
     }
 
     nav {
-      background-color: #333;
-      color: white;
-      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: #ffffff; /* Text color for navigation links */
     }
 
     .container {
-      position: relative;
-    }
-
-    .blurb {
       text-align: center;
-      padding: 20px;
+      padding: 50px;
     }
-
-    img {
-      position: absolute;
-      width: 200px; 
-      height: 200px;
-      object-fit: cover;	
-    }
-
-    #image1 {
-      top: 10%;
-      left: 10%;
-    }
-
-    #image2 {
-      top: 30%;
-      left: 50%;
-    }
-
 
     footer {
-      background-color: #333;
-      color: white;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+      color: #ffffff; /* Text color for footer */
       text-align: center;
       padding: 10px;
       position: absolute;
       bottom: 0;
       width: 100%;
     }
+      
   </style>
  </head>
  <body>
@@ -66,9 +67,6 @@
        <h1>Hi, my name is Chris Dimapasok.</h1>
        <p>Welcome to my personal website!</p>  
      </div>
-
-    <img id="image1" src="Proteomics.png">
-    <img id="image2" src="Data_Science.png">>
    </div>
    <footer>
    <ul>
