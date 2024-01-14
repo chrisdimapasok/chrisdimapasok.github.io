@@ -78,49 +78,6 @@ h1, p {
     }
 
 
-
-
-
-
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Function to reveal text one word at a time
-      function revealText(element) {
-        var words = element.textContent.split(' ');
-        element.textContent = '';
-        words.forEach(function(word, index) {
-          var wordElement = document.createElement('span');
-          wordElement.textContent = word;
-          wordElement.style.display = 'inline-block';
-          wordElement.style.animation = 'fadeIn 1.5s ease-in-out ' + (index * 0.5) + 's';
-          element.appendChild(wordElement);
-
-          // Add a space after each word
-          if (index < words.length - 1) {
-            var spaceElement = document.createElement('span');
-            spaceElement.textContent = ' ';
-            element.appendChild(spaceElement);
-          }
-        });
-      }
-
-      // Call the function for h1 and p elements
-      revealText(document.querySelector('h1'));
-      revealText(document.querySelector('p'));
-    });
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
       h1 {
       font-size: 10vw;
       display: block;
@@ -195,6 +152,54 @@ body {
 
   </style>
  </head>
+
+
+
+
+
+
+
+
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to reveal text one word at a time
+      function revealText(element) {
+        var words = element.textContent.split(' ');
+        element.textContent = '';
+        words.forEach(function(word, index) {
+          var wordElement = document.createElement('span');
+          wordElement.textContent = word;
+          wordElement.style.display = 'inline-block';
+          wordElement.style.animation = 'fadeIn 1.5s ease-in-out ' + (index * 0.5) + 's';
+          element.appendChild(wordElement);
+
+          // Add a space after each word
+          if (index < words.length - 1) {
+            var spaceElement = document.createElement('span');
+            spaceElement.textContent = ' ';
+            element.appendChild(spaceElement);
+          }
+        });
+      }
+
+      // Call the function for h1 and p elements
+      revealText(document.querySelector('h1'));
+      revealText(document.querySelector('p'));
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
  <body>
 
 
