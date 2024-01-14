@@ -172,7 +172,7 @@ body {
    <div class="container”>
      <div class="blurb”>
        <h1>Hi, my name is Chris Dimapasok.</h1>
-       <p>Welcome to my personal website!</p>
+       <p>id = "welcomeText">Welcome to my personal website!</p>
    <h3>Illustration: Christoph Burgstedt</h3>
 
   
@@ -211,8 +211,14 @@ body {
       }
 
       // Call the function for h1 and p elements
-      revealText(document.querySelector('h1'));
-      revealText(document.querySelector('p'));
+      var h1Element=document.querySelector('h1');
+      var pElement= document.getElementById('welcomeText');
+
+ revealText(h1Element);
+      // Add a delay before revealing the p element
+      setTimeout(function() {
+        revealText(pElement);
+      }, words.length * 500); // Adjust the delay as needed
     });
   </script>
 
