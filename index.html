@@ -102,6 +102,27 @@ body {
 }
 
 
+@media only screen and (max-width: 600px) {
+  nav {
+    height: auto; /* Allow the navigation bar to adjust its height based on content */
+  }
+
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+
+  nav a {
+    font-size: 18px; /* Further reduce font size for smaller screens if needed */
+  }
+}
+
   </style>
  </head>
  <body>
