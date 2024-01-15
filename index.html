@@ -61,7 +61,6 @@
 
 
 
-
 h1, p {
       overflow: hidden;
       white-space: nowrap;
@@ -137,18 +136,7 @@ body {
   }
 
   nav a {
-    font-size: 18px; /* Further reduce font size for smaller screens if needed */
-  }
-}
-
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    font-size: 18px; 
   }
 }
 
@@ -172,7 +160,7 @@ body {
    <div class="container”>
      <div class="blurb”>
        <h1>Hi, my name is Chris Dimapasok.</h1>
-       <p>id = "welcomeText">Welcome to my personal website!</p>
+       <p>Welcome to my personal website!</p>
    <h3>Illustration: Christoph Burgstedt</h3>
 
   
@@ -210,16 +198,20 @@ body {
         });
       }
 
-      // Call the function for h1 and p elements
-      var h1Element=document.querySelector('h1');
-      var pElement= document.getElementById('welcomeText');
+      
+setTimeout(function() {
+        var h1Element = document.getElementById('nameText');
+        var pElement = document.getElementById('welcomeText');
 
- revealText(h1Element);
-      // Add a delay before revealing the p element
-      setTimeout(function() {
-        revealText(pElement);
-      }, words.length * 500); // Adjust the delay as needed
+        revealText(h1Element, 'Hi, my name is Chris.');
+        // Add a delay before revealing the p element
+        setTimeout(function() {
+          revealText(pElement, 'Welcome to my personal website!');
+        }, words.length * 500); // Adjust the delay as needed
+      }, 1000); // Adjust the initial delay as needed
     });
+
+
   </script>
 
 
