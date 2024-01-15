@@ -174,7 +174,17 @@ body {
 
 
 
-
+ <style>
+    /* Define the fadeIn animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+ </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -207,7 +217,7 @@ setTimeout(function() {
         // Add a delay before revealing the p element
         setTimeout(function() {
           revealText(pElement, 'pElement.textContent);
-        }, pElement.textContent,split(' ').length * 500); // Adjust the delay as needed
+        }, 3000);
       }, 1000); // Adjust the initial delay as needed
     });
 
