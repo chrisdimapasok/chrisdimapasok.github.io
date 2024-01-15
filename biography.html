@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Little About Me</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <style>
@@ -18,19 +19,11 @@ hr {
 
 
  body {
-      background: linear-gradient(to right, #4CAF50, #ffffff);
+
+  background: #f8f8f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
 }
-
-
-
-   .container {
-    text-align: center;
-    margin-top: 10%;
-    padding: 20px; /* Increased padding */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    background-color: #ffffff;
-  }
 
 
 nav {
@@ -62,7 +55,35 @@ nav {
       font-size: 20px;   
  }
  
+    .bio-container {
+      max-width: 800px;
+      margin: 80px auto;
+      background-color: #fff;
+       padding: 20px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       overflow: hidden;
+     }
 
+    bio-image {
+             float: left;
+             width: 200px;
+             height: 200px;
+             border-radius: 50%;
+             margin-right: 20px;
+             overflow: hidden;
+         }    
+
+
+       .bio-image img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+         }
+
+         .bio-text {
+             overflow: hidden;
+         }
 
     img {
       max-width: 100%;
@@ -76,14 +97,12 @@ nav {
 </body>
 
 
-<div class="background-container">
 
 <nav>
   <a href="index.html">Back to Main Page</a>
 </nav>
 
-
-<body class="bg-light">
+   <div class="bio-container">
    <div class="container text-center mt-5">
   <h1> Christopher Dimapasok </h1> 
     <h2> Johns Hopkins University M.S. Bioinformatics </h2>
