@@ -5,57 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Chris Dimapasok</title>
    <style>
-    /* Define the fadeIn animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
- </style>
-<style>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Function to reveal text one word at a time
-      function revealText(element) {
-        var words = element.textContent.split(' ');
-        element.textContent = '';
-        words.forEach(function(word, index) {
-          var wordElement = document.createElement('span');
-          wordElement.textContent = word;
-          wordElement.style.display = 'inline-block';
-          wordElement.style.animation = 'fadeIn 1.5s ease-in-out ' + (index * 0.5) + 's';
-          element.appendChild(wordElement);
-
-          // Add a space after each word
-          if (index < words.length - 1) {
-            var spaceElement = document.createElement('span');
-            spaceElement.textContent = ' ';
-            element.appendChild(spaceElement);
-          }
-        });
-      }
-
-      
-setTimeout(function() {
-        var h1Element = document.getElementById('nameText');
-        var pElement = document.getElementById('welcomeText');
-
-        revealText(h1Element, h1Element.textContent);
-        // Add a delay before revealing the p element
-        setTimeout(function() {
-          revealText(pElement, pElement.textContent);
-        }, 3000);
-      }, 1000); // Adjust the initial delay as needed
-
-    });
-
-
-  </script>
-
-
 
     body {
       margin: 0;
@@ -70,6 +19,15 @@ setTimeout(function() {
       justify-content: center;
       height: 100vh;
     }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
     nav {
@@ -109,15 +67,6 @@ setTimeout(function() {
       vertical-align: top;
       padding: 50px;
      } 
-
-
-
-
-h1, p {
-      overflow: hidden;
-      white-space: nowrap;
-      color: transparent;
-    }
 
 
       h1 {
@@ -199,7 +148,6 @@ body {
 
 
  <body>
-
 
 
    <nav>
