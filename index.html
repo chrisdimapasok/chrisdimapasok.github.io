@@ -159,8 +159,8 @@ body {
    </nav>
    <div class="container”>
      <div class="blurb”>
-       <h1>Hi, my name is Chris Dimapasok.</h1>
-       <p>Welcome to my personal website!</p>
+       <h1>id= "nameText">Hi, my name is Chris Dimapasok.</h1>
+       <p> id="welcomeText">Welcome to my personal website!</p>
    <h3>Illustration: Christoph Burgstedt</h3>
 
   
@@ -203,11 +203,11 @@ setTimeout(function() {
         var h1Element = document.getElementById('nameText');
         var pElement = document.getElementById('welcomeText');
 
-        revealText(h1Element, 'Hi, my name is Chris.');
+        revealText(h1Element, h1Element.textContent);
         // Add a delay before revealing the p element
         setTimeout(function() {
-          revealText(pElement, 'Welcome to my personal website!');
-        }, words.length * 500); // Adjust the delay as needed
+          revealText(pElement, 'pElement.textContent);
+        }, pElement.textContent,split(' ').length * 500); // Adjust the delay as needed
       }, 1000); // Adjust the initial delay as needed
     });
 
