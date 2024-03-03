@@ -110,22 +110,40 @@ h1, p {
 
 
 
- @media only screen and (max-width: 600px) {
+/* Media query for iPhone */
+@media only screen and (max-width: 600px) {
+  nav {
+    align-items: center; /* Center items vertically */
+  }
+
+  nav ul {
+    justify-content: center; /* Center the navigation links horizontally */
+    align-items: center; /* Center the navigation links vertically */
+    height: 100%; /* Fill the height of the nav container */
+    display: flex; /* Use flexbox for alignment */
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+  }
+
+  nav a {
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .blurb {
+    text-align: center; /* Center text on smaller screens */
+  }
+}
 
 
-      nav ul {
-        justify-content: center; /* Center the navigation links */
-      }
 
 
-      nav a {
-        font-size: 25px; /* Adjust font size for smaller screens */
-      }
-
-      .blurb {
-        text-align: center; /* Center text on smaller screens */
-      }
-    }
 
 
      
