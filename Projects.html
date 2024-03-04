@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
+
+        
+       nav {
+      background-color: rgba(0, 0, 0, 0.5); 
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      height: 40px;
+    }
+
+   nav ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 10px;
+      vertical-align: middle;
+    }
+
+    nav a {
+      padding: 10px 12px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;   
+ }
+
+.background-container {
+      padding-top: 40px; /* Adjust this value to account for the fixed navbar height */
+    }
+
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -82,6 +118,10 @@
     </style>
 </head>
 <body>
+<div class="background-container">
+  <nav>
+    <a href="index.html">Back to Main Page</a>
+  </nav>
     <div class="container">
         <h1>Projects</h1>
         <div class="project">
